@@ -1,5 +1,8 @@
 # Playwright Sentinel
 
+[![CI](https://github.com/jeanljh/playwright-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/jeanljh/playwright-sentinel/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Your UI tests can pass while the page throws errors and API calls fail behind the scenes. Playwright Sentinel watches every test for the problems your assertions never check, and turns them into one bug list.
 
 It catches JavaScript exceptions, unhandled promise rejections, console errors, hydration mismatches, CORS and CSP errors, failed requests, and API calls that return errors. Each problem is grouped across tests and runs. A baseline file lets CI fail only when something new shows up. Claude can optionally triage the list for you.
@@ -196,7 +199,7 @@ On GitHub Actions you don't need any extra setup for the summary. To keep the HT
 
 ```yaml
 - run: npx playwright test
-- uses: actions/upload-artifact@v4
+- uses: actions/upload-artifact@v7
   if: always()
   with:
     name: watchdog-report
