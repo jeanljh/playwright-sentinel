@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-22T13:05:12.489Z",
+  "issues": {
+    "088a1e181242": {
+      "category": "cors",
+      "message": "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://<n>.<n>:<n>/api/stock (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: <n>."
+    },
+    "16081adf1164": {
+      "category": "http-4xx",
+      "message": "GET http://localhost:<n>/static/theme-v2.css returned <n> Not Found"
+    },
+    "260a24dc93c6": {
+      "category": "unhandled-rejection",
+      "message": "Analytics queue not initialized: dropped event add_to_cart"
+    },
+    "2dae84832395": {
+      "category": "framework-warning",
+      "message": "Warning: Each child in a list should have a unique \"key\" prop. Check the render method of `ProductList`."
+    },
+    "39deed4c2f4d": {
+      "category": "hydration",
+      "message": "Hydration failed because the server rendered text didn't match the client. Server: \"<n> items\" Client: \"<n> items\""
+    },
+    "3cb51f4b7532": {
+      "category": "console-error",
+      "message": "Failed to load recommendations: HTTP <n>"
+    },
+    "4de5ee3012c5": {
+      "category": "uncaught-exception",
+      "message": "TypeError: can't access property \"items\", window.miniCart is undefined"
+    },
+    "617b02a2c533": {
+      "category": "cors",
+      "message": "Access to fetch at 'http://<n>.<n>:<n>/api/stock' from origin 'http://localhost:<n>/' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    "69278b17e0d6": {
+      "category": "cors",
+      "message": "Origin http://localhost:<n>/ is not allowed by Access-Control-Allow-Origin. Status code: <n> (GET http://<n>.<n>:<n>/api/stock)"
+    },
+    "78390e9edbc0": {
+      "category": "http-4xx",
+      "message": "GET http://localhost:<n>/api/orders/:id/receipt returned <n> Not Found"
+    },
+    "a6160c7af99f": {
+      "category": "uncaught-exception",
+      "message": "TypeError: undefined is not an object (evaluating 'config.position = 'bottom-right'')"
+    },
+    "aa0d282d770d": {
+      "category": "uncaught-exception",
+      "message": "TypeError: Cannot read properties of undefined (reading 'items')"
+    },
+    "aa231b3b026b": {
+      "category": "http-5xx",
+      "message": "GET http://localhost:<n>/api/recommendations returned <n> Internal Server Error"
+    },
+    "ca626ea9afa7": {
+      "category": "graphql-error",
+      "message": "GraphQL error from POST http://localhost:<n>/graphql Cannot query field \"rating\" on type \"Review\"."
+    },
+    "d319a609a987": {
+      "category": "uncaught-exception",
+      "message": "TypeError: Cannot set properties of undefined (setting 'position')"
+    },
+    "fd130cd961fc": {
+      "category": "uncaught-exception",
+      "message": "TypeError: undefined is not an object (evaluating 'window.miniCart.items')"
+    },
+    "ffabf96f30cd": {
+      "category": "uncaught-exception",
+      "message": "TypeError: can't access property \"position\", config is undefined"
+    }
+  }
+}

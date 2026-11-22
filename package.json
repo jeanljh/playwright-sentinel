@@ -1,0 +1,62 @@
+{
+  "name": "playwright-sentinel",
+  "version": "0.1.0",
+  "description": "Catches the browser errors your Playwright tests miss: console errors, uncaught exceptions, failed requests and more, grouped into one bug list with optional Claude triage.",
+  "keywords": [
+    "playwright",
+    "testing",
+    "console-errors",
+    "network",
+    "e2e",
+    "ai",
+    "claude"
+  ],
+  "license": "MIT",
+  "author": "jeanljh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanljh/playwright-sentinel.git"
+  },
+  "homepage": "https://github.com/jeanljh/playwright-sentinel#readme",
+  "bugs": {
+    "url": "https://github.com/jeanljh/playwright-sentinel/issues"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./reporter": {
+      "types": "./dist/reporter.d.ts",
+      "default": "./dist/reporter.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "playwright test",
+    "test:unit": "playwright test --project=unit",
+    "demo": "playwright test --project=demo-chromium",
+    "demo:all": "playwright test --project=demo-*",
+    "demo:server": "node demo/server.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.12.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
